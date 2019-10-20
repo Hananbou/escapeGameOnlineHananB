@@ -2,24 +2,29 @@ package fr.hanan.escapegame.escapeGameOnlineHananB.Joueurs;
 
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Scanner;
+
+import org.apache.log4j.Logger;
 
 import fr.hanan.escapeGameOnlineHananB.Config.Configuration;
+
 
 /**
  * "Computer" est la classe représentant l'ordinateur ("machine") qui sera confronté au Player
  * @author hanan
  */
 public class Computer {
-	private static Scanner sc;
+	
 	Configuration config = new Configuration();
 	
+	private static final Logger logger = Logger.getLogger(Computer.class);		
+
+	/**
+	 * @return un random pour afficher un code
+	 */
 	public ArrayList<Integer> returnCode() {
-		
-		Random r = new Random();
-		
-		ArrayList<Integer> code = new ArrayList<Integer>();
-		
+		logger.info("entrée dans la méthode qui retourne un random");
+		Random r = new Random();		
+		ArrayList<Integer> code = new ArrayList<Integer>();		
 		for (int i=0; i < config.combiSize(); i++) {
 		
 	    code.add(r.nextInt(10));
@@ -29,7 +34,12 @@ public class Computer {
 		return code;
 	}
 	
+	/**
+	 * @return le chiffre maximum c'est-à-dire 9
+	 */
+	
 	public ArrayList<Integer> returnMax(){
+		logger.info("entrée dans la méthode qui retourne un tableau du nombre maximum 9");
 		
 		ArrayList<Integer> codeMax = new ArrayList<Integer>();
 		
@@ -42,7 +52,13 @@ public class Computer {
 		return codeMax;
 	
 	}
+	
+	/**
+	 * @return le chiffre minimum c'est-à-dire 9
+	 */
+	
 	public ArrayList<Integer> returnMin(){
+		logger.info("entrée dans la méthode qui retourne un tableau du nombre minimum 0");
 		
 		ArrayList<Integer> codeMin = new ArrayList<Integer>();
 		
@@ -55,83 +71,7 @@ public class Computer {
 		return codeMin;
 	
 	}
-	public void Proposecode() {
-		
-		System.out.println("");
-		
-		String plus = "+";
-		String moins = "-";
-		Random r = new Random();
-		
-		ArrayList<Integer> codeComputer = new ArrayList<Integer>(); 
-		ArrayList<Integer> min = new ArrayList<Integer>();
-		ArrayList<Integer> max = new ArrayList<Integer>();
-		
-		codeComputer.add(r.nextInt(10));
-		min.add(0);
-		max.add(9);	
-		
-		System.out.println(codeComputer.get(0));
-		
-		while(true) {
-			
-			sc = new Scanner(System.in);
-			String answer = sc.nextLine();
-		
-			if(plus.equals(answer)) {
-				
-				if(max.get(0) == min.get(0)) {			
-					max.set(0,9);
-					min.set(0,0);
-					
-				}
-				min.set(0, codeComputer.get(0)+1);
-				if(max.get(0) < min.get(0)) {
-					
-					max.set(0,9);
-					min.set(0,0);
-					
-				}
-				
-				if(codeComputer.get(0) != 9) {
-				codeComputer.set(0,r.nextInt(max.get(0) - min.get(0) + 1) + min.get(0));
-				
-				}
-				
-				if(codeComputer.get(0) == 10) {
-					codeComputer.set(0, 9);
-					
-				}
-		
-			}
-			
-			if(moins.equals(answer)) {
-				
-				if(max.get(0) == min.get(0)) {	
-					max.set(0,9);
-					min.set(0,0);
-					
-				}
-				max.set(0, codeComputer.get(0)-1);
-				if(max.get(0) < min.get(0)) {	
-					max.set(0,9);
-					min.set(0,0);
-				}	
-				
-				if(codeComputer.get(0) != 0) {
-					codeComputer.set(0,r.nextInt(max.get(0) - min.get(0) + 1) + min.get(0));
-				}
-				
-				if(codeComputer.get(0) == -1) {
-					codeComputer.set(0, 0);
-					
-				}
 
-			}	
-			System.out.println(codeComputer.get(0));
-		}
-		
-	}
 	
 	
 }

@@ -1,11 +1,16 @@
 package fr.hanan.escapegame.escapeGameOnlineHananB.Home;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
+
+/**
+ * "Welcome" est la classe représentant l'accueil"
+ * Y sont décrits les modalités du jeu et les options à choisir. 
+ * @author hanan
+*/
 
 public class Welcome {
 	
-	public static Logger logger = LogManager.getLogger();
+	private static final Logger logger = Logger.getLogger(Welcome.class);	
 	
 	public void welcoming() {
 	logger.info("Entrée dans l'accueil");

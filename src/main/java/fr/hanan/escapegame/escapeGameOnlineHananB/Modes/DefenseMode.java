@@ -2,8 +2,7 @@ package fr.hanan.escapegame.escapeGameOnlineHananB.Modes;
 
 import java.util.ArrayList;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
 import fr.hanan.escapeGameOnlineHananB.Config.Configuration;
 import fr.hanan.escapegame.escapeGameOnlineHananB.Joueurs.Player;
@@ -16,14 +15,17 @@ import fr.hanan.escapegame.escapeGameOnlineHananB.Joueurs.Player;
 	 */
 
 public class DefenseMode {
-	public static Logger logger = LogManager.getLogger();
 	
+	private static final Logger logger = Logger.getLogger(DefenseMode.class);		
 	Calcul calcul = new Calcul();
 	Player p = new Player();
-	
 	Configuration config = new Configuration();
 	
 	public void calculation() {
+		/**
+		 *@see Calcul
+		 *
+		*/
 		
 		logger.info("je rentre dans le mode défense");
 		
@@ -33,7 +35,7 @@ public class DefenseMode {
 		
 		System.out.println("Proposer un code:");
 		
-		p.returnString();
+		p.returnInt();
 		
 		logger.info("Appel de la méthode pour le renvoi du nombre du joueur en chaine de caractères");
 	    
@@ -48,8 +50,7 @@ public class DefenseMode {
 	    for(; i < config.tryNumber() ; ) {
 	    	
 	    ArrayList<String> str =	calcul.calculDefenseMode();
-	    	
-	    
+
 	    if(str.get(0).equals(str.get(1))) {
 	    	
 	    	System.out.println("j'ai gagné");

@@ -1,10 +1,6 @@
 package fr.hanan.escapegame.escapeGameOnlineHananB.Modes;
-
 import java.util.ArrayList;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
+import org.apache.log4j.Logger;
 import fr.hanan.escapeGameOnlineHananB.Config.Configuration;
 import fr.hanan.escapegame.escapeGameOnlineHananB.Joueurs.Player;
 
@@ -16,20 +12,29 @@ import fr.hanan.escapegame.escapeGameOnlineHananB.Joueurs.Player;
 	 */
 
 public class DualMode {
-	public static Logger logger = LogManager.getLogger();
+	
+	/**
+	 *@see Calcul
+	 *
+	*/
+	
+	private static final Logger logger = Logger.getLogger(DualMode.class);	
 
 	Calcul calcul = new Calcul();
 	Player p = new Player();
 	Configuration config = new Configuration();
 	
+	
 	public void calculation() {
+		
 	  logger.info("je rentre dans le mode duel");
 	  
 	  System.out.println("Bienvenue dans le mode duel du jeu. Ici chacun dispose d'un code secret,le premier qui trouve le code de l'autre a gagné. Il sera indiqué pour chaque chiffre du code s'il doit être plus grand (+), plus petit (-), ou si celui est bon (=)");
 	  
 	  //Code secret de l'ordinateur:
 	 
-	  if( config.devOrnot() == true) {			
+	  if( config.devOrnot() == true) {	
+		  
 		System.out.println("Le code secret est: " + calcul.showCodec());	
 		}
  
@@ -37,7 +42,7 @@ public class DualMode {
 	    
 	    //code joueur
 	    
-	    p.returnString();
+	    p.returnInt();
 		//Random ordinateur (proposition):
 		
 		
@@ -47,10 +52,8 @@ public class DualMode {
 	    
 	    while (play == true) {
 	    
-	    	//boucle
-	    logger.debug("Appel de la méthode de calcul pour le mode défense");	
+	    	
 	    ArrayList<String> str =	calcul.calculDefenseMode();
-	    logger.debug("la méthode de calcul pour le mode défense a été appelée");	
 	    
 	    if(str.get(0).equals(str.get(1))) {
 	    	
@@ -64,9 +67,8 @@ public class DualMode {
 	    
 		System.out.println("A votre tour "); 
 	    
-		logger.debug("Appel de la méthode de calcul pour le mode attaque");	
+			
 		ArrayList<String> str2 = calcul.calculAttackMode();
-		 logger.debug("la méthode de calcul pour le mode attaque a été appelée");
 	    
 		 //Réponse de l'ordinateur:
 	    
@@ -82,7 +84,5 @@ public class DualMode {
 	    logger.info("Sortie du mode duel");
 	}
 
-	
-	
 }
 

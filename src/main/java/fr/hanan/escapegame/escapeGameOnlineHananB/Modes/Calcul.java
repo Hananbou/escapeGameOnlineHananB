@@ -3,16 +3,16 @@ package fr.hanan.escapegame.escapeGameOnlineHananB.Modes;
 import java.util.ArrayList;
 import java.util.Random;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
 import fr.hanan.escapeGameOnlineHananB.Config.Configuration;
+import fr.hanan.escapegame.escapeGameOnlineHananB.Home.Main;
 import fr.hanan.escapegame.escapeGameOnlineHananB.Joueurs.Computer;
 import fr.hanan.escapegame.escapeGameOnlineHananB.Joueurs.Player;
 
 public class Calcul {
 
-	public static Logger logger = LogManager.getLogger();
+	private static final Logger logger = Logger.getLogger(Calcul.class);	
 	Configuration config = new Configuration();
 	
 	Computer c = new Computer();
@@ -65,7 +65,9 @@ public class Calcul {
 
 
 public ArrayList<String> calculDefenseMode() {
+	
 	Random r = new Random();
+	
 	ArrayList<String> reponse = p.returnString();
     
     StringBuilder reponses = new StringBuilder();
@@ -82,9 +84,6 @@ public ArrayList<String> calculDefenseMode() {
     String minus = "-";
     String equal = "=";
     
-    
-	
-  
     for (int i1=0; i1 < config.combiSize(); i1++) {
  	
   		/*if (plus.equals(reponse.get(i1))) {
@@ -157,17 +156,11 @@ public ArrayList<String> calculDefenseMode() {
 				
 			}
 		
-		if(equal.equals(reponse.get(i1))){
-	    		
-	    	codedefense.set(i1 ,codedefense.get(i1));
-	    	
+		if(equal.equals(reponse.get(i1))){	    		
+	    	codedefense.set(i1 ,codedefense.get(i1)); 	
 	    	}
 		}
-    	
-    	
-    	
-    	
-    	
+  	 	
     }
     
     StringBuilder egals = new StringBuilder();

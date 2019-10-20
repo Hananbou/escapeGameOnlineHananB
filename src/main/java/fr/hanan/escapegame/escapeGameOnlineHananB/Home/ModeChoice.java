@@ -2,23 +2,23 @@ package fr.hanan.escapegame.escapeGameOnlineHananB.Home;
 
 import java.util.Scanner;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
 import fr.hanan.escapegame.escapeGameOnlineHananB.Home.Main;
 import fr.hanan.escapegame.escapeGameOnlineHananB.Modes.AttackMode;
 import fr.hanan.escapegame.escapeGameOnlineHananB.Modes.DefenseMode;
 import fr.hanan.escapegame.escapeGameOnlineHananB.Modes.DualMode;
 
-/**
- * "ModeChoice" est la classe représentant le choix du mode de jeu: 
- * "Attack", "Defense", "Dual" (classes situées dans le package "Modes").
- * @author hanan
- */
+	/**
+		 * "ModeChoice" est la classe représentant le choix du mode de jeu: 
+		 * "Attack", "Defense", "Dual" (classes situées dans le package "Modes").
+		 * @author hanan
+	 */
+
 
 public class ModeChoice {
 	
-	public static Logger logger = LogManager.getLogger();
+	private static final Logger logger = Logger.getLogger(ModeChoice.class);	
 	
 	//private static final String Main = null;
 	AttackMode mode1 = new AttackMode();
@@ -26,8 +26,8 @@ public class ModeChoice {
 	DualMode mode3 = new DualMode();
 	private Scanner dataNumber;
 	
-	
-	
+
+		
 	public void readMode(int number) {
 		logger.info("Entrée dans la méthode pour le choix du mode");
 		
@@ -48,7 +48,6 @@ public class ModeChoice {
 		System.out.println("taper 1 pour rejouer, 2 pour page d'accueil, 3 pour quitter l'application");
 		
 		boolean itsInteger = false;
-		
 		while(itsInteger == false) {
 			
 			try {	
@@ -68,21 +67,19 @@ public class ModeChoice {
 					if(numbers == 1 || numbers == 2 || numbers == 3 ) {
 						test=false;
 					}
-					
-					
-					
+				
 					if(numbers == 1) {
 						ModeChoice modech = new ModeChoice();
 						modech.readMode(number);
-						logger.info("Vous rejouez au même mode");
+						logger.info("rejouer au même mode");
 					}
 					else if (numbers == 2){
 						Main.main(null);
-						logger.info("Vous êtes de retour à l'accueil");
+						logger.info("retour à l'accueil");
 					}
 					else if(numbers == 3) {
 						System.exit(0);
-						logger.info("Vous avez quitté l'application");
+						logger.info("quitter l'application");
 					}
 					if(test == false) {
 						break;
@@ -99,7 +96,6 @@ public class ModeChoice {
 				
 				logger.error("pas un chiffre entier");
 				System.out.println("vous n'avez pas tapé un chiffre entier");
-				
 				itsInteger = false;
 			}
 		}

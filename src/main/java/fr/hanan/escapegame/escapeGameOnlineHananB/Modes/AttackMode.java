@@ -2,10 +2,9 @@ package fr.hanan.escapegame.escapeGameOnlineHananB.Modes;
 
 import java.util.ArrayList;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
+import org.apache.log4j.Logger;
 import fr.hanan.escapeGameOnlineHananB.Config.Configuration;
+
 
 /**
  * "AttackMode" est la classe représentant le mode Attaque: 
@@ -16,15 +15,16 @@ import fr.hanan.escapeGameOnlineHananB.Config.Configuration;
 
 public class AttackMode {
 	
-	public static Logger logger = LogManager.getLogger();
-	
-	
+	/**
+	 *@see Calcul
+	 *
+	*/
+	private static final Logger logger = Logger.getLogger(AttackMode.class);	
 	Calcul calcul = new Calcul();
 	Configuration config = new Configuration();
 	
 	public void calculation() {		
 		logger.info(" je rentre dans le mode attaque");
-		
 		System.out.println("Bienvenue. Vous devez deviner le code secret de l'ordinateur. Il vous indiquera pour chaque chiffre du code si vous devez proposer un chiffre plus grand (+), plus petit (-), ou si celui est bon (=)");
 
 		System.out.println("");
@@ -37,8 +37,7 @@ public class AttackMode {
 	int i=0;
 	
 	for(;i < config.tryNumber();) {
-
-    
+ 
 	ArrayList<String> str =  calcul.calculAttackMode();
     
 	System.out.println("Proposition : "+ str.get(0) +" ->Résultat : " + str.get(1));
@@ -54,10 +53,8 @@ public class AttackMode {
 	if(i == config.tryNumber()) {		
 		System.out.println("Dommage. Vous avez perdu.");
 		
-	}
+	}	
 	logger.info(" fin du calcul pour le mode attaque");	
 	}
-	
-	
-	
+		
 }

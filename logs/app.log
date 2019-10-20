@@ -9,3 +9,51 @@
 2019-10-05 00:11:56,018 INFO f.h.e.e.M.AttackMode [main]  je rentre dans le mode attaque
 2019-10-05 00:11:56,019 INFO f.h.e.e.M.AttackMode [main]  indication du code de l'ordinateur (uniquement si mode développeur activé)
 2019-10-05 00:11:56,020 INFO f.h.e.e.J.Player [main] Entrée dans la méthode pour transformer la saisie du joueur en nombre
+2019-10-20 18:28:18 INFO  je rentre dans l'application
+2019-10-20 18:28:18 DEBUG Appel de la méthode pour aller à l'accueil
+2019-10-20 18:28:18 INFO  Entrée dans l'accueil
+2019-10-20 18:28:18 DEBUG la méthode pour aller à l'accueil a été appelée
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:29:00 INFO  je rentre dans l'application
+2019-10-20 18:29:00 DEBUG Appel de la méthode pour aller à l'accueil
+2019-10-20 18:29:00 INFO  Entrée dans l'accueil
+2019-10-20 18:29:00 DEBUG la méthode pour aller à l'accueil a été appelée
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 19:14:03 INFO  je rentre dans l'application
+2019-10-20 19:14:03 DEBUG Appel de la méthode pour aller à l'accueil
+2019-10-20 19:14:03 INFO  Entrée dans l'accueil
+2019-10-20 19:14:03 DEBUG la méthode pour aller à l'accueil a été appelée
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
