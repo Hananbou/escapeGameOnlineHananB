@@ -66,7 +66,7 @@ public class Configuration {
 	 	*/	
 		
 		try {
-			input = new FileInputStream("C://workspacejava/escapeGameOnlineHananB/ressources/config.properties");
+			InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties");
 			prop.load(input);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
