@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
+import fr.hanan.escapeGameOnlineHananB.Config.Configuration;
+
 
 /**
 	 * "Main" est la classe permettant d'éxecuter les commandes: 
@@ -16,11 +18,12 @@ import org.apache.log4j.Logger;
 public class Main {
 
 	private static final Logger logger = Logger.getLogger(Main.class);	
-	
+	static Configuration conf = new Configuration();
 	private static Scanner dataNumber;
 	
 	public static void main(String[] args) {
 
+		Configuration.loadProperties(args[0]);
 		logger.info("je rentre dans l'application");	
 		Welcome welcome = new Welcome();
 		logger.debug("Appel de la méthode pour aller à l'accueil");

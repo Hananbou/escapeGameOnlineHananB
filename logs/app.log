@@ -1,59 +1,12 @@
-2019-10-05 00:11:21,549 INFO f.h.e.e.H.Main [main] je rentre dans l'application
-2019-10-05 00:11:21,552 INFO f.h.e.e.H.Welcome [main] Entrée dans l'accueil
-2019-10-05 00:11:21,552 DEBUG f.h.e.e.H.Main [main] Appel de la méthode pour aller à l'accueil
-2019-10-05 00:11:50,873 INFO f.h.e.e.H.Main [main] je rentre dans l'application
-2019-10-05 00:11:50,875 INFO f.h.e.e.H.Welcome [main] Entrée dans l'accueil
-2019-10-05 00:11:50,876 DEBUG f.h.e.e.H.Main [main] Appel de la méthode pour aller à l'accueil
-2019-10-05 00:11:56,018 DEBUG f.h.e.e.H.Main [main] Appel de la méthode qui permet de choisir le mode
-2019-10-05 00:11:56,018 INFO f.h.e.e.H.ModeChoice [main] Entrée dans la méthode pour le choix du mode
-2019-10-05 00:11:56,018 INFO f.h.e.e.M.AttackMode [main]  je rentre dans le mode attaque
-2019-10-05 00:11:56,019 INFO f.h.e.e.M.AttackMode [main]  indication du code de l'ordinateur (uniquement si mode développeur activé)
-2019-10-05 00:11:56,020 INFO f.h.e.e.J.Player [main] Entrée dans la méthode pour transformer la saisie du joueur en nombre
-2019-10-20 18:28:18 INFO  je rentre dans l'application
-2019-10-20 18:28:18 DEBUG Appel de la méthode pour aller à l'accueil
-2019-10-20 18:28:18 INFO  Entrée dans l'accueil
-2019-10-20 18:28:18 DEBUG la méthode pour aller à l'accueil a été appelée
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
-2019-10-20 18:28:18 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:29:00 INFO  je rentre dans l'application
-2019-10-20 18:29:00 DEBUG Appel de la méthode pour aller à l'accueil
-2019-10-20 18:29:00 INFO  Entrée dans l'accueil
-2019-10-20 18:29:00 DEBUG la méthode pour aller à l'accueil a été appelée
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
-2019-10-20 18:29:00 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 19:14:03 INFO  je rentre dans l'application
-2019-10-20 19:14:03 DEBUG Appel de la méthode pour aller à l'accueil
-2019-10-20 19:14:03 INFO  Entrée dans l'accueil
-2019-10-20 19:14:03 DEBUG la méthode pour aller à l'accueil a été appelée
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
-2019-10-20 19:14:03 INFO  entrée dans la méthode qui retourne un random
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un random
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un random
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un random
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un random
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un random
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un tableau du nombre minimum 0
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un tableau du nombre maximum 9
+2019-11-15 23:45:38 INFO  entrée dans la méthode qui retourne un random

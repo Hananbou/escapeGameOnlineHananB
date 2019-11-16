@@ -19,7 +19,7 @@
 
   <root> 
     <priority value ="debug" /> 
-    <appender-ref ref="console" /> 
+    <appender-ref ref="roll-by-size" /> 
   </root>
   
 </log4j:configuration>
